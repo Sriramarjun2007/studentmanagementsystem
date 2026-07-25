@@ -8,7 +8,7 @@ function AddStudent() {
     const saveStudent = async () => {
         try {
             const response = await fetch(
-                "http://127.0.0.1:8000/api/add-student/",
+                "https://studentmanagementsystem-lfs7.onrender.com/api/add-student/",
                 {
                     method: "POST",
                     headers: {
