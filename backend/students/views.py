@@ -18,3 +18,7 @@ def add_student(request):
             "message": "Student Added Successfully",
             "id": student.id
         })
+
+    return JsonResponse({
+        "error": "Only POST requests are allowed."
+    }, status=405)
